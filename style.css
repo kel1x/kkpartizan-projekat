@@ -1,0 +1,283 @@
+body {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 75px;
+}
+
+.navigacija {
+    display: flex;
+    gap: 20px;
+}
+
+.navigacija a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navigacija a:hover {
+    color: #ffcc00;
+}
+
+.pocetna {
+    background-image: url('slike/pozadina.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.pocetna-tekst{
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+}
+
+.pocetna h1 {
+    font-size: 3em;
+}
+
+.pocetna p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.roster {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.roster h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.player-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 180px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.player-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+}
+
+.player-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.table {
+    padding: 40px;
+    background-color: #f4f4f4;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #000;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 760px) {
+    .players {
+        flex-direction: inline;
+        align-items: center;
+    }
+
+    .navigacija {
+        flex-direction: inline;
+        align-items: center;
+    }
+
+    .pocetna h1 {
+        font-size: 2em;
+    }
+
+    .pocetna p {
+        font-size: 1.2em;
+    }
+
+    .vremenska-linija {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .dogadjaj {
+        flex: 1 1 calc(48% - 20px);
+    }
+}
+
+.kontakt {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.kontakt h1 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+form .polje {
+    margin-bottom: 15px;
+}
+
+form .polje label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form .polje input,
+form .polje textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form .polje button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form .polje button:hover {
+    background-color: #ffcc00;
+}
+
+.istorija {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.istorija h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.vremenska-linija {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dogadjaj {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dogadjaj h2 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.dogadjaj p {
+    margin: 0 0 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.dogadjaj img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

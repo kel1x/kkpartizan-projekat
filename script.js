@@ -5,9 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
             pitanje.classList.toggle("active");
         });
     });
+
+    let brojanje = parseInt(localStorage.getItem("brojPoseta")) || 0;
+    brojanje++;
+    localStorage.setItem("brojPoseta", brojanje);
+    document.getElementById("brojac").innerText = brojanje;
 });
 
-let brojanje = localStorage.getItem("brojPoseta") || 0;
-brojanje++;
-localStorage.setItem("brojPoseta", brojanje);
-document.getElementById("brojac").innerText = brojanje;

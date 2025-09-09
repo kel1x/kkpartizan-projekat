@@ -132,6 +132,30 @@ header {
     border-radius: 10px;
 }
 
+.galerija {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.galerija h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.slideshow {
+    max-width: 700px;
+    margin: auto;
+}
+
+.slideshow img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 .table {
     padding: 40px;
     background-color: #f4f4f4;

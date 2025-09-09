@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KK Partizan - Pocetna</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -24,6 +25,9 @@
         <div class="pocetna-tekst">
             <h1>Dobrodosli na stranicu KK Partizan Mozzart Bet</h1>
             <p>- Idemo tamo gde treba da zavrsimo -</p>
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                Dobrodosli na zvanicni sajt KK Partizan • Sledeca utakmica: Partizan vs PAOK • Karte u prodaji!
+            </marquee>            
         </div>
     </div>
 
@@ -109,6 +113,10 @@
                 <img src="slike/igraci/tajrik.png">
                 <p class="player-name">88 - Tyrique Jones</p>
                 <p>Pozicija: Centar</p>
+            </div>
+            <div class="coach-card">
+                <img src="slike/zeljko.gif" alt="Željko Obradović">
+                <p class="player-name">Trener - Željko Obradović</p>
             </div>
         </div>
     </div>
@@ -384,9 +392,24 @@
             </tbody>
         </table>
     </div>    
-
+    <div class="faq">
+        <h2>Cesto postavljena pitanja</h2>
+        <div class="pitanje">
+            <h3>Kako kupiti karte za utakmicu?</h3>
+            <p>Karte mozete kupiti online ili na blagajnama Arene. (Ostoja dere sa cenama)</p>
+        </div>
+        <div class="pitanje">
+            <h3>Gde mogu kupiti klupske suvenire?</h3>
+            <p>Zvanicni fan shop nalazi se u Beogradskoj Areni i online.</p>
+        </div>
+        <div class="pitanje">
+            <h3>Kako postati clan kluba?</h3>
+            <p>Clanstvo se ostvaruje registracijom preko sajta i uplatom clanarine.</p>
+        </div>
+    </div>
     <footer>
         <p>&copy; 2024 KK Partizan Mozzart Bet</p>
+        <p>Broj poseta: <span id="brojac">0</span></p>
     </footer>
 </body>
 </html>

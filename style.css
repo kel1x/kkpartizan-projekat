@@ -115,6 +115,23 @@ header {
     margin-top: 10px;
 }
 
+.coach-card {
+    background-color: gold;
+    color: #000;
+    border: 2px solid #d4af37;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.coach-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .table {
     padding: 40px;
     background-color: #f4f4f4;
@@ -145,6 +162,67 @@ tr:hover {
     background-color: #ffcc00;
     color: white;
 }
+
+.faq {
+    background: linear-gradient(135deg, #f9f9f9, #eeeeee);
+    padding: 50px 20px;
+    border-top: 3px solid #000;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pitanje {
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 800px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.pitanje:hover {
+    transform: translateY(-3px);
+}
+
+.pitanje h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pitanje h3::after {
+    content: '+';
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.pitanje.active h3::after {
+    content: '-';
+}
+
+.pitanje p {
+    margin-top: 10px;
+    color: #444;
+    line-height: 1.5;
+    display: none;
+}
+
+.pitanje.active p {
+    display: block;
+}
+
 
 footer {
     background-color: #000000;

@@ -11,17 +11,27 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("brojPoseta", brojanje);
     document.getElementById("brojac").innerText = brojanje;
 
-    let index = 0;
-    function prikaziSledecu() {
-        let slike = document.querySelectorAll(".slideshow img");
-        for (let i = 0; i < slike.length; i++) {
-            slike[i].style.display = "none";
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
         }
-        index++;
-        if (index > slike.length) { index = 1 }
-        slike[index - 1].style.display = "block";
-        setTimeout(prikaziSledecu, 3000);
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active-dot");
+        }
+
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].classList.add("active-dot");  
+
+        setTimeout(showSlides, 3000);
     }
-    prikaziSledecu();
 });
 
